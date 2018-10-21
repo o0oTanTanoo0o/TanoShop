@@ -15,7 +15,7 @@ namespace TanoShop.Service
         IEnumerable<Post> GetAll();
         IEnumerable<Post> GetAllPaging(int page, int pageSize, out int totalRow);
         Post GetById(int id);
-        IEnumerable<Post> GetAllByTagPaging(int page, int pageSize, out int totalRow, string tag);
+        IEnumerable<Post> GetAllByTagPaging(string tag, int page, int pageSize, out int totalRow);
         void SaveChanges();
     }
 
@@ -47,9 +47,9 @@ namespace TanoShop.Service
             return _postRepsitory.GetAll(new string[] {"PostCategory"});
         }
 
-        public IEnumerable<Post> GetAllByTagPaging(int page, int pageSize, out int totalRow, string tag)
+        public IEnumerable<Post> GetAllByTagPaging(string tag, int page, int pageSize, out int totalRow)
         {
-            return _postRepsitory.GetMultiPaging(t=>t.Status==true, out totalRow, page, pageSize);
+            return _postRepsitory.GetAllByTag(tag, page, pageSize, out totalRow);
         }
 
         public IEnumerable<Post> GetAllPaging(int page, int pageSize, out int totalRow)
