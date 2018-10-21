@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TanoShop.Test", "TanoShop.T
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TanoShop.Web", "TanoShop.Web\TanoShop.Web.csproj", "{F37CBA54-1CFC-4E35-9506-90D9202588FF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TanoShop.Common", "TanoShop.Common\TanoShop.Common.csproj", "{6F0DCD23-C999-4C11-8912-E05B9C114A01}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{F37CBA54-1CFC-4E35-9506-90D9202588FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F37CBA54-1CFC-4E35-9506-90D9202588FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F37CBA54-1CFC-4E35-9506-90D9202588FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F0DCD23-C999-4C11-8912-E05B9C114A01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F0DCD23-C999-4C11-8912-E05B9C114A01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F0DCD23-C999-4C11-8912-E05B9C114A01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F0DCD23-C999-4C11-8912-E05B9C114A01}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
