@@ -3,6 +3,7 @@
     public class UnitOfWork : IUnitOfWork
     {
         private readonly IDbFactory dbFactory;
+
         private TanoShopDbContext dbContext;
 
         public UnitOfWork(IDbFactory dbFactory)

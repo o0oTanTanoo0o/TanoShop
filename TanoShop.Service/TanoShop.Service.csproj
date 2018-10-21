@@ -40,7 +40,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PostService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TanoShop.Data\TanoShop.Data.csproj">
+      <Project>{789EA927-46E1-48D6-9843-5789608704E2}</Project>
+      <Name>TanoShop.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TanoShop.Model\TanoShop.Model.csproj">
+      <Project>{C6065CB9-8A06-4217-AA53-740C1CD1C076}</Project>
+      <Name>TanoShop.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
